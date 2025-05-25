@@ -1,4 +1,6 @@
 {
   "item.sarthrakmod.sartherion": "Sartherion",
-  "item.sarthrakmod.broken_sartherion": "Broken Sartherion"
+  "item.sarthrakmod.broken_sartherion": "Broken Sartherion",
+
+  "block.sarthrakmod.remnant_core": "Remnant Core"
 }
