@@ -1,6 +1,11 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube",
   "textures": {
-    "all": "sarthrakmod:block/remnant_core"
+    "down": "sarthrakmod:block/remnant_core_tb",
+    "up": "sarthrakmod:block/remnant_core_tb",
+    "north": "sarthrakmod:block/remnant_core_side",
+    "east": "sarthrakmod:block/remnant_core_side",
+    "south": "sarthrakmod:block/remnant_core_side",
+    "west": "sarthrakmod:block/remnant_core_side"
   }
 }
