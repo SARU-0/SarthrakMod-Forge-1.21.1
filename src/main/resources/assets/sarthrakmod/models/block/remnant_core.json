@@ -6,6 +6,7 @@
     "north": "sarthrakmod:block/remnant_core_side",
     "east": "sarthrakmod:block/remnant_core_side",
     "south": "sarthrakmod:block/remnant_core_side",
-    "west": "sarthrakmod:block/remnant_core_side"
+    "west": "sarthrakmod:block/remnant_core_side",
+    "particle": "sarthrakmod:block/remnant_core_tb"
   }
 }

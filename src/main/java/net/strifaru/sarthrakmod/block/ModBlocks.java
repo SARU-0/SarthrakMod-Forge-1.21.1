@@ -2,9 +2,12 @@ package net.strifaru.sarthrakmod.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,8 +23,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> REMNANT_CORE = registerBlock("remnant_core",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(30.0f,1200.0f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)));
+                    .mapColor(MapColor.COLOR_BLACK).requiresCorrectToolForDrops().strength(33.0F, 1250.0F).sound(SoundType.ANCIENT_DEBRIS)));
 
+    public static final RegistryObject<Block> SARTHERION_BLOCK = registerBlock("sartherion_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().strength(6.0F, 8.0F).sound(SoundType.METAL)));
+
+    
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

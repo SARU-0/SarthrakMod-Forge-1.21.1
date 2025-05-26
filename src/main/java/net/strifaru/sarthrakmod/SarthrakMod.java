@@ -14,6 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.strifaru.sarthrakmod.block.ModBlocks;
+import net.strifaru.sarthrakmod.item.ModCreativeModeTabs;
 import net.strifaru.sarthrakmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -30,11 +31,11 @@ public class SarthrakMod
         IEventBus modEventBus = context.getModEventBus();
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
-
-
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModCreativeModeTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 

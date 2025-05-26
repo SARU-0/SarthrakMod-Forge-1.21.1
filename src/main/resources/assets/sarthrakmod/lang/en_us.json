@@ -2,5 +2,10 @@
   "item.sarthrakmod.sartherion": "Sartherion",
   "item.sarthrakmod.broken_sartherion": "Broken Sartherion",
 
-  "block.sarthrakmod.remnant_core": "Remnant Core"
+  "block.sarthrakmod.remnant_core": "Remnant Core",
+  "block.sarthrakmod.sartherion_block": "Sartherion Block",
+
+  "creativetab.sarthrakmod.sarthrak_items": "Sarthrak Items",
+  "creativetab.sarthrakmod.sarthrak_blocks": "Sarthrak Blocks"
+
 }

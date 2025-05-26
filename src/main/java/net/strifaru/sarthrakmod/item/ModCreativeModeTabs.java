@@ -1,0 +1,41 @@
+package net.strifaru.sarthrakmod.item;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+import net.strifaru.sarthrakmod.SarthrakMod;
+import net.strifaru.sarthrakmod.block.ModBlocks;
+
+public class ModCreativeModeTabs {
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, SarthrakMod.MOD_ID);
+
+    public static final RegistryObject<CreativeModeTab> SARTHRAK_ITEMS_TAB = CREATIVE_MODE_TABS.register("sarthrak_items_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SARTHERION.get()))
+                    .title(Component.translatable("creativetab.sarthrakmod.sarthrak_items"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.SARTHERION.get());
+                        output.accept(ModItems.BROKEN_SARTHERION.get());
+
+                    }).build());
+
+
+    public static final RegistryObject<CreativeModeTab> SARTHRAK_BLOCKS_TAB = CREATIVE_MODE_TABS.register("sarthrak_blocks_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.SARTHERION_BLOCK.get()))
+                    .withTabsBefore(SARTHRAK_ITEMS_TAB.getId())
+                    .title(Component.translatable("creativetab.sarthrakmod.sarthrak_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.SARTHERION_BLOCK.get());
+                        output.accept(ModBlocks.REMNANT_CORE.get());
+
+                    }).build());
+
+
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
+}
