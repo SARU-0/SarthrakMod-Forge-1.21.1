@@ -1,9 +1,12 @@
 {
   "item.sarthrakmod.sartherion": "Sartherion",
   "item.sarthrakmod.broken_sartherion": "Broken Sartherion",
+  "item.sarthrakmod.sartherion_blade": "Sartherion Blade",
+  "item.sarthrakmod.kinder": "Kinder",
 
   "block.sarthrakmod.remnant_core": "Remnant Core",
   "block.sarthrakmod.sartherion_block": "Sartherion Block",
+  "block.sarthrakmod.arcane_catalyst": "Arcane Catalyst",
 
   "creativetab.sarthrakmod.sarthrak_items": "Sarthrak Items",
   "creativetab.sarthrakmod.sarthrak_blocks": "Sarthrak Blocks"

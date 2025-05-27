@@ -13,6 +13,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.strifaru.sarthrakmod.SarthrakMod;
+import net.strifaru.sarthrakmod.block.custom.FusionBlock;
 import net.strifaru.sarthrakmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -27,9 +28,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SARTHERION_BLOCK = registerBlock("sartherion_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().strength(6.0F, 8.0F).sound(SoundType.METAL)));
+                    .mapColor(MapColor.COLOR_RED).requiresCorrectToolForDrops().strength(53.0F, 1250.0F).sound(SoundType.METAL)));
 
-    
+    public static final RegistryObject<Block> ARCANE_CATALYST = registerBlock("arcane_catalyst",
+            () -> new FusionBlock(BlockBehaviour.Properties.of().strength(2).requiresCorrectToolForDrops()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -20,6 +20,8 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SARTHERION.get());
                         output.accept(ModItems.BROKEN_SARTHERION.get());
+                        output.accept(ModItems.SARTHERION_BLADE.get());
+                        output.accept(ModItems.KINDER.get());
 
                     }).build());
 
@@ -31,6 +33,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.SARTHERION_BLOCK.get());
                         output.accept(ModBlocks.REMNANT_CORE.get());
+                        output.accept(ModBlocks.ARCANE_CATALYST.get());
 
                     }).build());
 

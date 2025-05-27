@@ -1,0 +1,14 @@
+{
+  "item.sarthrakmod.sartherion": "Sartherion",
+  "item.sarthrakmod.broken_sartherion": "Sartherion Brisé",
+  "item.sarthrakmod.sartherion_blade": "Lame en Sartherion",
+  "item.sarthrakmod.kinder": "Kinder",
+
+  "block.sarthrakmod.remnant_core": "Noyau Rémanent",
+  "block.sarthrakmod.sartherion_block": "Block de Sartherion",
+  "block.sarthrakmod.arcane_catalyst": "Catalyseur Arcanique",
+
+  "creativetab.sarthrakmod.sarthrak_items": "Items de Sarthrak",
+  "creativetab.sarthrakmod.sarthrak_blocks": "Blocks de Sarthrak"
+
+}
