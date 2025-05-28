@@ -21,7 +21,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SARTHERION.get());
                         output.accept(ModItems.BROKEN_SARTHERION.get());
                         output.accept(ModItems.SARTHERION_BLADE.get());
-                        output.accept(ModItems.KINDER.get());
+                        output.accept(ModItems.SARTHERION_NUGGET.get());
 
                     }).build());
 
@@ -34,6 +34,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SARTHERION_BLOCK.get());
                         output.accept(ModBlocks.REMNANT_CORE.get());
                         output.accept(ModBlocks.ARCANE_CATALYST.get());
+
+                    }).build());
+
+
+    public static final RegistryObject<CreativeModeTab> SARTHRAK_FOODS_TAB = CREATIVE_MODE_TABS.register("sarthrak_foods_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.KINDER.get()))
+                    .title(Component.translatable("creativetab.sarthrakmod.sarthrak_foods"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.KINDER.get());
 
                     }).build());
 

@@ -26,8 +26,9 @@ public class SMItemModelProvider extends net.minecraftforge.client.model.generat
 
     @Override
     protected void registerModels() {
-        //handheldItem(ModItems.SARTHERION);
         basicItem(ModItems.SARTHERION.get());
+        basicItem(ModItems.SARTHERION_NUGGET.get());
+
         handheldItem(ModItems.SARTHERION_BLADE);
         handheldItem(ModItems.KINDER);
     }

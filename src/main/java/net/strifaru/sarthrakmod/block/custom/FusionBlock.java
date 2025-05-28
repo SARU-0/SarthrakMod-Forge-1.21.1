@@ -1,15 +1,14 @@
 package net.strifaru.sarthrakmod.block.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -19,6 +18,8 @@ import net.minecraftforge.common.Tags;
 import net.strifaru.sarthrakmod.SarthrakMod;
 import net.strifaru.sarthrakmod.block.ModBlocks;
 import net.strifaru.sarthrakmod.item.ModItems;
+
+import java.util.List;
 
 public class FusionBlock extends Block {
     public FusionBlock(Properties properties) {
@@ -67,5 +68,11 @@ public class FusionBlock extends Block {
         }
 
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, Item.TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        pTooltipComponents.add(Component.translatable("tooltip.sarthrakmod.arcane_catalyst.tooltip"));
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }
 }

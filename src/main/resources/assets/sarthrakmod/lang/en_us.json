@@ -3,12 +3,19 @@
   "item.sarthrakmod.broken_sartherion": "Broken Sartherion",
   "item.sarthrakmod.sartherion_blade": "Sartherion Blade",
   "item.sarthrakmod.kinder": "Kinder",
+  "item.sarthrakmod.sartherion_nugget": "Sartherion Nugget",
 
   "block.sarthrakmod.remnant_core": "Remnant Core",
   "block.sarthrakmod.sartherion_block": "Sartherion Block",
   "block.sarthrakmod.arcane_catalyst": "Arcane Catalyst",
 
   "creativetab.sarthrakmod.sarthrak_items": "Sarthrak Items",
-  "creativetab.sarthrakmod.sarthrak_blocks": "Sarthrak Blocks"
+  "creativetab.sarthrakmod.sarthrak_blocks": "Sarthrak Blocks",
+  "creativetab.sarthrakmod.sarthrak_foods": "Sarthrak Foods",
+
+  "tooltip.sarthrakmod.arcane_catalyst.tooltip": "This block is an instant furnace. Throw an ore uppon it and it will transform it. ",
+  "tooltip.sarthrakmod.sartherion_blade.shift_down": "This tool allows you to remove a block and go through, but after 3 seconds it'll be back.",
+  "tooltip.sarthrakmod.sartherion_blade": "Press §eShift§r for more information."
+
 
 }

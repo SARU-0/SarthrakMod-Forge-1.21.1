@@ -3,12 +3,18 @@
   "item.sarthrakmod.broken_sartherion": "Sartherion Brisé",
   "item.sarthrakmod.sartherion_blade": "Lame en Sartherion",
   "item.sarthrakmod.kinder": "Kinder",
+  "item.sarthrakmod.sartherion_nugget": "Pépites de Sartherion",
 
   "block.sarthrakmod.remnant_core": "Noyau Rémanent",
   "block.sarthrakmod.sartherion_block": "Block de Sartherion",
   "block.sarthrakmod.arcane_catalyst": "Catalyseur Arcanique",
 
   "creativetab.sarthrakmod.sarthrak_items": "Items de Sarthrak",
-  "creativetab.sarthrakmod.sarthrak_blocks": "Blocks de Sarthrak"
+  "creativetab.sarthrakmod.sarthrak_blocks": "Blocks de Sarthrak",
+  "creativetab.sarthrakmod.sarthrak_foods": "Nourritures de Sarthrak",
+
+  "tooltip.sarthrakmod.arcane_catalyst.tooltip": "Ce block est un four instantané. Jetez un minerai dessus et il le transformera. ",
+  "tooltip.sarthrakmod.sartherion_blade.shift_down": "Cet outil permet d'effacer un block et passer à travers, mais après 3 secondes le block réapparait.",
+  "tooltip.sarthrakmod.sartherion_blade": "Appuyez sur §eShift§r pour plus d'informations."
 
 }

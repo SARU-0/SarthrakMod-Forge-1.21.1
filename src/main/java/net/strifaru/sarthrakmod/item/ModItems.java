@@ -23,6 +23,9 @@ public class ModItems {
     public static final RegistryObject<Item> SARTHERION_BLADE = ITEMS.register("sartherion_blade",
             () -> new BladeItem(new Item.Properties().durability(64)));
 
+    public static final RegistryObject<Item> SARTHERION_NUGGET = ITEMS.register("sartherion_nugget",
+            () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> KINDER = ITEMS.register("kinder",
             () -> new Item(new Item.Properties().food(ModFoodProperties.KINDER)));
 
