@@ -52,15 +52,7 @@ public class SarthrakMod
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(SMItems.SARTHERION);
-            event.accept(SMItems.BROKEN_SARTHERION);
-        }
 
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(SMBlocks.REMNANT_CORE);
-
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
