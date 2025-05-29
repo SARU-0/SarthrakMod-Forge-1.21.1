@@ -2,9 +2,7 @@ package net.strifaru.sarthrakmod.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -14,11 +12,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.strifaru.sarthrakmod.SarthrakMod;
 import net.strifaru.sarthrakmod.block.custom.FusionBlock;
-import net.strifaru.sarthrakmod.item.ModItems;
+import net.strifaru.sarthrakmod.item.SMItems;
 
 import java.util.function.Supplier;
 
-public class ModBlocks {
+public class SMBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, SarthrakMod.MOD_ID);
 
@@ -41,7 +39,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        SMItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

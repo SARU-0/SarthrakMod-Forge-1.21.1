@@ -13,8 +13,7 @@ import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import net.strifaru.sarthrakmod.SarthrakMod;
-import net.strifaru.sarthrakmod.item.ModItems;
-import net.strifaru.sarthrakmod.item.custom.BladeItem;
+import net.strifaru.sarthrakmod.item.SMItems;
 
 import java.util.LinkedHashMap;
 
@@ -26,11 +25,11 @@ public class SMItemModelProvider extends net.minecraftforge.client.model.generat
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.SARTHERION.get());
-        basicItem(ModItems.SARTHERION_NUGGET.get());
+        basicItem(SMItems.SARTHERION.get());
+        basicItem(SMItems.SARTHERION_NUGGET.get());
 
-        handheldItem(ModItems.SARTHERION_BLADE);
-        handheldItem(ModItems.KINDER);
+        handheldItem(SMItems.SARTHERION_BLADE);
+        handheldItem(SMItems.KINDER);
     }
 
     private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();

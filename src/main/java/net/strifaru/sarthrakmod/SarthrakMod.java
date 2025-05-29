@@ -13,9 +13,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.strifaru.sarthrakmod.block.ModBlocks;
-import net.strifaru.sarthrakmod.item.ModCreativeModeTabs;
-import net.strifaru.sarthrakmod.item.ModItems;
+import net.strifaru.sarthrakmod.block.SMBlocks;
+import net.strifaru.sarthrakmod.item.SMCreativeModeTabs;
+import net.strifaru.sarthrakmod.item.SMItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -34,10 +34,10 @@ public class SarthrakMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        ModCreativeModeTabs.register(modEventBus);
+        SMCreativeModeTabs.register(modEventBus);
 
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        SMItems.register(modEventBus);
+        SMBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -53,12 +53,12 @@ public class SarthrakMod
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SARTHERION);
-            event.accept(ModItems.BROKEN_SARTHERION);
+            event.accept(SMItems.SARTHERION);
+            event.accept(SMItems.BROKEN_SARTHERION);
         }
 
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.REMNANT_CORE);
+            event.accept(SMBlocks.REMNANT_CORE);
 
         }
     }

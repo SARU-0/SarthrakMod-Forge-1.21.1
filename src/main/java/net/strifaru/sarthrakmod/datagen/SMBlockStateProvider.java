@@ -4,10 +4,9 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 import net.strifaru.sarthrakmod.SarthrakMod;
-import net.strifaru.sarthrakmod.block.ModBlocks;
+import net.strifaru.sarthrakmod.block.SMBlocks;
 
 public class SMBlockStateProvider extends BlockStateProvider {
     public SMBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -18,8 +17,8 @@ public class SMBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.SARTHERION_BLOCK);
-        blockWithItem(ModBlocks.ARCANE_CATALYST);
+        blockWithItem(SMBlocks.SARTHERION_BLOCK);
+        blockWithItem(SMBlocks.ARCANE_CATALYST);
 
     }
 

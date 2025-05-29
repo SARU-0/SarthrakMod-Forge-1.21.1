@@ -14,8 +14,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.minecraftforge.registries.RegistryObject;
-import net.strifaru.sarthrakmod.block.ModBlocks;
-import net.strifaru.sarthrakmod.item.ModItems;
+import net.strifaru.sarthrakmod.block.SMBlocks;
 
 import java.util.Set;
 
@@ -27,9 +26,9 @@ public class SMLootTableProvider extends BlockLootSubProvider {
     @Override
     protected void generate() {
         //The broken block will loot itself
-        dropSelf(ModBlocks.SARTHERION_BLOCK.get());
-        dropSelf(ModBlocks.ARCANE_CATALYST.get());
-        dropSelf(ModBlocks.REMNANT_CORE.get());
+        dropSelf(SMBlocks.SARTHERION_BLOCK.get());
+        dropSelf(SMBlocks.ARCANE_CATALYST.get());
+        dropSelf(SMBlocks.REMNANT_CORE.get());
 
         //The broken block will loot an item.
         /* Example with RemnantCore, but it doesn't actually loot an item, it will through a recipe.
@@ -51,6 +50,6 @@ public class SMLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+        return SMBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
 }

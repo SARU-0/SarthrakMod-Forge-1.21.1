@@ -11,13 +11,10 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraftforge.common.Tags;
-import net.strifaru.sarthrakmod.SarthrakMod;
-import net.strifaru.sarthrakmod.block.ModBlocks;
-import net.strifaru.sarthrakmod.item.ModItems;
+import net.strifaru.sarthrakmod.block.SMBlocks;
+import net.strifaru.sarthrakmod.item.SMItems;
 
 import java.util.List;
 
@@ -60,8 +57,8 @@ public class FusionBlock extends Block {
                 itemEntity.setItem(new ItemStack(Items.COPPER_BLOCK, itemEntity.getItem().getCount()));
 
             }
-            if(itemEntity.getItem().getItem() == ModBlocks.REMNANT_CORE.get().asItem()) {
-                itemEntity.setItem(new ItemStack(ModItems.BROKEN_SARTHERION.get(), itemEntity.getItem().getCount()));
+            if(itemEntity.getItem().getItem() == SMBlocks.REMNANT_CORE.get().asItem()) {
+                itemEntity.setItem(new ItemStack(SMItems.BROKEN_SARTHERION.get(), itemEntity.getItem().getCount()));
 
             }
 
