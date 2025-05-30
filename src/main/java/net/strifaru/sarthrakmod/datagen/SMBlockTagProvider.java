@@ -7,6 +7,7 @@ import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.strifaru.sarthrakmod.SarthrakMod;
 import net.strifaru.sarthrakmod.block.SMBlocks;
+import net.strifaru.sarthrakmod.util.SMTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -28,5 +29,11 @@ public class SMBlockTagProvider extends BlockTagsProvider {
                 .add(SMBlocks.SARTHERION_BLOCK.get())
                 .add(SMBlocks.REMNANT_CORE.get())
                 .add(SMBlocks.ARCANE_CATALYST.get());
+
+        tag(SMTags.Blocks.NEEDS_SARTHERION_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(SMTags.Blocks.INCORRECT_FOR_SARTHERION_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
     }
 }

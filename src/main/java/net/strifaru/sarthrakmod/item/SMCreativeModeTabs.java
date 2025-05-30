@@ -22,6 +22,11 @@ public class SMCreativeModeTabs {
                         output.accept(SMItems.BROKEN_SARTHERION.get());
                         output.accept(SMItems.SARTHERION_BLADE.get());
                         output.accept(SMItems.SARTHERION_NUGGET.get());
+                        output.accept(SMItems.SARTHERION_SWORD.get());
+                        output.accept(SMItems.SARTHERION_PICKAXE.get());
+                        output.accept(SMItems.SARTHERION_AXE.get());
+                        output.accept(SMItems.SARTHERION_SHOVEL.get());
+                        output.accept(SMItems.SARTHERION_HOE.get());
 
                     }).build());
 
@@ -33,6 +38,7 @@ public class SMCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(SMBlocks.SARTHERION_BLOCK.get());
                         output.accept(SMBlocks.REMNANT_CORE.get());
+                        output.accept(SMBlocks.ARCANE_CATALYST.get());
                         output.accept(SMBlocks.ARCANE_CATALYST.get());
 
                     }).build());

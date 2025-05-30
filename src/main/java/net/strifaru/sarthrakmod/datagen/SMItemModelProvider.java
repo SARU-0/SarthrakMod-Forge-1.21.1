@@ -27,9 +27,16 @@ public class SMItemModelProvider extends net.minecraftforge.client.model.generat
     protected void registerModels() {
         basicItem(SMItems.SARTHERION.get());
         basicItem(SMItems.SARTHERION_NUGGET.get());
+        basicItem(SMItems.KINDER.get());
 
         handheldItem(SMItems.SARTHERION_BLADE);
-        handheldItem(SMItems.KINDER);
+        handheldItem(SMItems.SARTHERION_SWORD);
+        handheldItem(SMItems.SARTHERION_PICKAXE);
+        handheldItem(SMItems.SARTHERION_AXE);
+        handheldItem(SMItems.SARTHERION_SHOVEL);
+        handheldItem(SMItems.SARTHERION_HOE);
+
+
     }
 
     private static LinkedHashMap<ResourceKey<TrimMaterial>, Float> trimMaterials = new LinkedHashMap<>();

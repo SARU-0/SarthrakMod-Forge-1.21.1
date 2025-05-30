@@ -1,6 +1,6 @@
 package net.strifaru.sarthrakmod.item;
 
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -26,6 +26,28 @@ public class SMItems {
 
     public static final RegistryObject<Item> KINDER = ITEMS.register("kinder",
             () -> new Item(new Item.Properties().food(SMFoodProperties.KINDER)));
+
+
+    public static final RegistryObject<Item> SARTHERION_SWORD = ITEMS.register("sartherion_sword",
+            () -> new SwordItem(SMToolTiers.SARTHERION, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(SMToolTiers.SARTHERION, 3, -2.4f))));
+
+    public static final RegistryObject<Item> SARTHERION_PICKAXE = ITEMS.register("sartherion_pickaxe",
+            () -> new PickaxeItem(SMToolTiers.SARTHERION, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(SMToolTiers.SARTHERION, 1, -2.8f))));
+
+    public static final RegistryObject<Item> SARTHERION_SHOVEL = ITEMS.register("sartherion_shovel",
+            () -> new ShovelItem(SMToolTiers.SARTHERION, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(SMToolTiers.SARTHERION, 1.5f, -3.0f))));
+
+    public static final RegistryObject<Item> SARTHERION_AXE = ITEMS.register("sartherion_axe",
+            () -> new AxeItem(SMToolTiers.SARTHERION, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(SMToolTiers.SARTHERION, 6, -3.2f))));
+
+    public static final RegistryObject<Item> SARTHERION_HOE = ITEMS.register("sartherion_hoe",
+            () -> new HoeItem(SMToolTiers.SARTHERION, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(SMToolTiers.SARTHERION, 0, -3.0f))));
+
 
 
     public static void register(IEventBus eventBus) {
