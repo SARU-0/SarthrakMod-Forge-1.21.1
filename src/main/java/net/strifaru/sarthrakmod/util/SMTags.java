@@ -13,6 +13,8 @@ public class SMTags {
 
         public static final TagKey<Block> NEEDS_SARTHERION_TOOL = createTag("needs_sartherion_tool");
         public static final TagKey<Block> INCORRECT_FOR_SARTHERION_TOOL = createTag("incorrect_for_sartherion_tool");
+        public static final TagKey<Block> MINEABLE_WITH_BUSTER_SWORD = createTag("mineable_with_buster_sword");
+
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(SarthrakMod.MOD_ID, name));

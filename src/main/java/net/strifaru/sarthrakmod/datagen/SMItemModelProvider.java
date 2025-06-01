@@ -27,6 +27,7 @@ public class SMItemModelProvider extends net.minecraftforge.client.model.generat
     protected void registerModels() {
         basicItem(SMItems.SARTHERION.get());
         basicItem(SMItems.SARTHERION_NUGGET.get());
+        basicItem(SMItems.BROKEN_SARTHERION.get());
         basicItem(SMItems.KINDER.get());
 
         handheldItem(SMItems.SARTHERION_BLADE);

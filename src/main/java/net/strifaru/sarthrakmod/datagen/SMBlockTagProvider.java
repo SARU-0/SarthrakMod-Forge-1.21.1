@@ -35,5 +35,13 @@ public class SMBlockTagProvider extends BlockTagsProvider {
 
         tag(SMTags.Blocks.INCORRECT_FOR_SARTHERION_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL);
+
+        tag(SMTags.Blocks.MINEABLE_WITH_BUSTER_SWORD)
+                .addTag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .addTag(BlockTags.MINEABLE_WITH_AXE)
+                .addTag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .addTag(BlockTags.MINEABLE_WITH_HOE);
+
+
     }
 }

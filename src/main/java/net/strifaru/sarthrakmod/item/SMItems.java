@@ -6,7 +6,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.strifaru.sarthrakmod.SarthrakMod;
-import net.strifaru.sarthrakmod.item.custom.BladeItem;
+import net.strifaru.sarthrakmod.item.custom.SMBusterSword;
+import net.strifaru.sarthrakmod.item.custom.SMBladeItem;
 
 public class SMItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -19,7 +20,7 @@ public class SMItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> SARTHERION_BLADE = ITEMS.register("sartherion_blade",
-            () -> new BladeItem(new Item.Properties().durability(64)));
+            () -> new SMBladeItem(new Item.Properties().durability(64)));
 
     public static final RegistryObject<Item> SARTHERION_NUGGET = ITEMS.register("sartherion_nugget",
             () -> new Item(new Item.Properties()));
@@ -48,7 +49,10 @@ public class SMItems {
             () -> new HoeItem(SMToolTiers.SARTHERION, new Item.Properties()
                     .attributes(HoeItem.createAttributes(SMToolTiers.SARTHERION, 0, -3.0f))));
 
-
+    public static final RegistryObject<Item> SARTHERION_BUSTER_SWORD = ITEMS.register("sartherion_buster_sword",
+            () -> new SMBusterSword(SMToolTiers.SARTHERION, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(SMToolTiers.SARTHERION, 7, -3.0f))));
+    
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

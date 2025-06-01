@@ -68,6 +68,46 @@ public class SMRecipeProvider extends RecipeProvider implements IConditionBuilde
                 .define('C', Items.COCOA_BEANS)
                 .unlockedBy(getHasName(SMItems.SARTHERION.get()), has(SMItems.SARTHERION.get())).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SMItems.SARTHERION_SWORD.get())
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" B ")
+                .define('S', SMItems.SARTHERION.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(SMItems.SARTHERION.get()), has(SMItems.SARTHERION.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SMItems.SARTHERION_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('S', SMItems.SARTHERION.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(SMItems.SARTHERION.get()), has(SMItems.SARTHERION.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SMItems.SARTHERION_AXE.get())
+                .pattern(" SS")
+                .pattern(" BS")
+                .pattern(" B ")
+                .define('S', SMItems.SARTHERION.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(SMItems.SARTHERION.get()), has(SMItems.SARTHERION.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SMItems.SARTHERION_SHOVEL.get())
+                .pattern(" S ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('S', SMItems.SARTHERION.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(SMItems.SARTHERION.get()), has(SMItems.SARTHERION.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, SMItems.SARTHERION_HOE.get())
+                .pattern("SS ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('S', SMItems.SARTHERION.get())
+                .define('B', Items.STICK)
+                .unlockedBy(getHasName(SMItems.SARTHERION.get()), has(SMItems.SARTHERION.get())).save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, SMItems.SARTHERION_NUGGET.get(), 9)
                 .requires(SMItems.SARTHERION.get())
                 .unlockedBy(getHasName(SMItems.SARTHERION.get()), has(SMItems.SARTHERION.get())).save(pRecipeOutput);

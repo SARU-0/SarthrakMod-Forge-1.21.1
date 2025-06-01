@@ -27,6 +27,8 @@ public class SMCreativeModeTabs {
                         output.accept(SMItems.SARTHERION_AXE.get());
                         output.accept(SMItems.SARTHERION_SHOVEL.get());
                         output.accept(SMItems.SARTHERION_HOE.get());
+                        output.accept(SMItems.SARTHERION_BUSTER_SWORD.get());
+
 
                     }).build());
 

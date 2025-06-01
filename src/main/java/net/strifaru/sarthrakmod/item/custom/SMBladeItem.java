@@ -10,21 +10,18 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.Tags;
 
 import java.util.List;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class BladeItem extends Item {
-    public BladeItem(Properties pProperties) {
+public class SMBladeItem extends Item {
+    public SMBladeItem(Properties pProperties) {
         super(pProperties);
     }
 

@@ -24,5 +24,6 @@ public class SMItemTagProvider extends ItemTagsProvider {
                 .add(SMItems.SARTHERION.get())
                 .add(SMItems.SARTHERION_NUGGET.get())
                 .add(SMItems.BROKEN_SARTHERION.get());
+
     }
 }
