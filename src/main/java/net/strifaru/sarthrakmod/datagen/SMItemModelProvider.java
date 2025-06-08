@@ -37,6 +37,11 @@ public class SMItemModelProvider extends net.minecraftforge.client.model.generat
         handheldItem(SMItems.SARTHERION_SHOVEL);
         handheldItem(SMItems.SARTHERION_HOE);
 
+        trimmedArmorItem(SMItems.SARTHERION_HELMET);
+        trimmedArmorItem(SMItems.SARTHERION_CHESTPLATE);
+        trimmedArmorItem(SMItems.SARTHERION_LEGGINGS);
+        trimmedArmorItem(SMItems.SARTHERION_BOOTS);
+
 
     }
 

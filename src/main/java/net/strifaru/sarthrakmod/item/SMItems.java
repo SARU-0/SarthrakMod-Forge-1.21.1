@@ -51,7 +51,20 @@ public class SMItems {
 
     public static final RegistryObject<Item> SARTHERION_BUSTER_SWORD = ITEMS.register("sartherion_buster_sword",
             () -> new SMBusterSword(SMToolTiers.SARTHERION, new Item.Properties()
-                    .attributes(PickaxeItem.createAttributes(SMToolTiers.SARTHERION, 7, -3.0f))));
+                    .attributes(SwordItem.createAttributes(SMToolTiers.SARTHERION, 7, -3.0f))));
+
+    public static final RegistryObject<Item> SARTHERION_HELMET = ITEMS.register("sartherion_helmet",
+            () -> new ArmorItem(SMArmorMaterials.SARTHERION_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(38))));
+    public static final RegistryObject<Item> SARTHERION_CHESTPLATE = ITEMS.register("sartherion_chestplate",
+            () -> new ArmorItem(SMArmorMaterials.SARTHERION_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(38))));
+    public static final RegistryObject<Item> SARTHERION_LEGGINGS = ITEMS.register("sartherion_leggings",
+            () -> new ArmorItem(SMArmorMaterials.SARTHERION_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(38))));
+    public static final RegistryObject<Item> SARTHERION_BOOTS = ITEMS.register("sartherion_boots",
+            () -> new ArmorItem(SMArmorMaterials.SARTHERION_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(38))));
     
 
     public static void register(IEventBus eventBus) {

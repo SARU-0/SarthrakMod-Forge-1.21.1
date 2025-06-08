@@ -3,6 +3,7 @@ package net.strifaru.sarthrakmod.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.strifaru.sarthrakmod.SarthrakMod;
@@ -25,5 +26,12 @@ public class SMItemTagProvider extends ItemTagsProvider {
                 .add(SMItems.SARTHERION_NUGGET.get())
                 .add(SMItems.BROKEN_SARTHERION.get());
 
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(SMItems.SARTHERION_HELMET.get())
+                .add(SMItems.SARTHERION_CHESTPLATE.get())
+                .add(SMItems.SARTHERION_LEGGINGS.get())
+                .add(SMItems.SARTHERION_BOOTS.get());
+
     }
+
 }

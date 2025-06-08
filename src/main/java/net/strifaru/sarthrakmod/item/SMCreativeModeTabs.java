@@ -28,6 +28,10 @@ public class SMCreativeModeTabs {
                         output.accept(SMItems.SARTHERION_SHOVEL.get());
                         output.accept(SMItems.SARTHERION_HOE.get());
                         output.accept(SMItems.SARTHERION_BUSTER_SWORD.get());
+                        output.accept(SMItems.SARTHERION_HELMET.get());
+                        output.accept(SMItems.SARTHERION_CHESTPLATE.get());
+                        output.accept(SMItems.SARTHERION_LEGGINGS.get());
+                        output.accept(SMItems.SARTHERION_BOOTS.get());
 
 
                     }).build());
